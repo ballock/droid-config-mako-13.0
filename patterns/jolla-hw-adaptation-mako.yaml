@@ -27,12 +27,6 @@ Requires:
 - qt5-qpa-hwcomposer-plugin
 - qtscenegraph-adaptation
 
-# GStreamer v0.10 multimedia support is being deprecated
-#- gstreamer0.10-droidcamsrc
-#- gstreamer0.10-omx
-#- gstreamer0.10-droideglsink
-#- nemo-qtmultimedia-plugins-gstvideotexturebackend
-
 # Add GStreamer v1.0 as standard
 - gstreamer1.0
 - gstreamer1.0-plugins-good
@@ -46,9 +40,8 @@ Requires:
 - qt5-qtdeclarative-import-positioning
 - qt5-qtdeclarative-import-sensors
 
-# This is required for harbour-flashlight
-- gstreamer0.10-droidcamsrc
-- gstreamer0.10-droideglsink
+# Flashlight
+- jolla-settings-system-flashlight
 
 # Flashlight
 - jolla-settings-system-flashlight
@@ -71,12 +64,8 @@ Requires:
 # android diag mode only usable for certain android tools
 - usb-moded-diag-mode-android
 
-# from update13, this is needed explicitly
-- bluez-configs-sailfish
-
 # OBEX for bluetooth PBAP
 - obexd-calldata-provider
-- obexd-configs-sailfish
 
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 - rfkill

@@ -8,11 +8,15 @@
 
 %define dcd_path ./
 
+# Community HW adaptations need this
+%define community_adaptation 1
+
 # Adjust this for your device
 %define pixel_ratio 1.25
 
-# We assume most devices will
-%define have_modem 1
+# this allows us to disable 4G on mako through config in sparse
+Provides: ofono-configs
+Obsoletes: ofono-configs-mer
 
 # this allows us to disable 4G on mako through config in sparse
 Provides: ofono-configs
