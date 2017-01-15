@@ -34,7 +34,7 @@ Requires:
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
 
-- gstreamer1.0-droid
+# - gstreamer1.0-droid
 
 # This is needed for some harbour apps (eg. Falldown doesn't work otherwise)
 - qt5-qtdeclarative-import-positioning
@@ -81,7 +81,7 @@ Requires:
 - telepathy-ring
 
 # For devices where test_gps eventually gets a fix:
-- geoclue-provider-hybris
+# - geoclue-provider-hybris
 
 Summary: Jolla HW Adaptation mako
 
